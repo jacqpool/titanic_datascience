@@ -20,12 +20,18 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     install_requires=[
-        'pypandoc>=1.4'
+        'pypandoc>=1.4',
+        'pip install pytest==4.3.1',
+        'pytest-runner==4.4'
     ],
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
     # Substitute <github_account> with the name of your GitHub account
     url='https://github.com/jacqpool/Springboard/titanic_datascience',
     author='jacqpool',  # Substitute your name
     author_email='jacquespoolman@gmail.com',  # Substitute your email
     license='MIT',
     packages=['titanic'],
+
+
 )
