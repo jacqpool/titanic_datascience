@@ -20,7 +20,7 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     # Substitute <github_account> with the name of your GitHub account
-    url='https://github.com/jacqpool/Springboard/titanic_datascience',
+    url='https://github.com/jacqpool/titanic_datascience',
     author='jacqpool',  # Substitute your name
     author_email='jacquespoolman@gmail.com',  # Substitute your email
     license='MIT',
