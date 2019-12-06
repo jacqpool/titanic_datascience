@@ -3,10 +3,12 @@ import logging
 
 def extract_title(df):
     """Extract the title from the passenger names.
+
     Parameters
     ----------
     df : pandas.DataFrame
         Data-frame containing the column `Name`
+
     Returns
     -------
     pandas.DataFrame

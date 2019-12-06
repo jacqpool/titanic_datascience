@@ -6,12 +6,14 @@ from sklearn.metrics import accuracy_score
 
 def data_preparation(df, test_size, random_state=None):
     """Permute and split DataFrame index into train and test.
+
     Parameters
     ----------
     df: pandas.DataFrame
     test_size: float
         Fraction between 0.0 and 1.0
     random_state: int
+
     Returns
     -------
     tuple of numpy.ndarray,
@@ -36,6 +38,7 @@ def data_preparation(df, test_size, random_state=None):
 
 class MajorityVoteClassifier:
     """Majority Vote Classifier
+
     This class contains the `fit` and `predict` methods that are compatible
     with the SciKit-Learn model classes.
     """
@@ -54,12 +57,14 @@ class MajorityVoteClassifier:
 
 def run_majority_vote(X_train, X_test, y_train, y_test):
     """Use the majority vote to predict survival.
+
     Parameters
     ----------
     X_train: numpy.ndarray
     X_test: numpy.ndarray
     y_train: numpy.ndarray
     y_test: numpy.ndarray
+
     """
 
     logging.info("Running the majority vote classifier")
@@ -77,13 +82,16 @@ def run_majority_vote(X_train, X_test, y_train, y_test):
 
 def run_logistic_regression(X_train, X_test, y_train, y_test):
     """Use ridge logistic regression to predict survival.
+
     The ridge parameter is found using 10-fold cross-validation.
+
     Parameters
     ----------
     X_train: numpy.ndarray
     X_test: numpy.ndarray
     y_train: numpy.ndarray
     y_test: numpy.ndarray
+
     """
 
     logging.info("Running the ridge logistic regression classifier")
